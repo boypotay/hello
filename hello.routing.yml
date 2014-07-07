@@ -1,0 +1,7 @@
+hello.hello:
+  path: '/drupal8'
+  defaults:
+    _content: '\Drupal\hello\Controller\HelloController::drupal8Render'
+    _title: 'Hello Drupal8'
+  requirements:
+    _permission: 'access content'

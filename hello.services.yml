@@ -1,0 +1,3 @@
+services:
+  hello.currentuser:
+    class: Drupal\hello\Service\HelloCurrentuser
