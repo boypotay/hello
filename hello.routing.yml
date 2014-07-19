@@ -1,3 +1,6 @@
+route_callbacks:
+    - Drupal\hello\Routing\HelloRoutesCallbacks::getRoutes
+
 hello.hello:
   path: '/drupal8'
   defaults:
