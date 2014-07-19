@@ -1,6 +1,4 @@
 name: Hello
 type: module
-description: 'Hello Drupal 8'
-package: training
-version: 1.0
+description: 'Hello Drupal 8 - Nguyen'
 core: 8.x

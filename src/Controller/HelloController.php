@@ -18,9 +18,22 @@ class HelloController extends ControllerBase {
   }
   
   public function drupal8Render() {
-    print $this->helloService->getCurrentuser();
     return array(
       '#markup' => t('Hello @user', array('@user' => $this->helloService->getCurrentuser()))
     );
-  } 
+  }
+  
+  /**
+  * Prints a user.
+  *
+  * @param string $name
+  * 
+  */
+  public function drupal8Name($name) {
+    return array(
+      '#markup' => t('Hello @user', array('@user' => $name))
+    );
+  }
+
+
 }

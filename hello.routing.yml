@@ -5,3 +5,11 @@ hello.hello:
     _title: 'Hello Drupal8'
   requirements:
     _permission: 'access content'
+    
+hello.argument:
+  path: '/drupal8/{name}'
+  defaults:
+    _content: '\Drupal\hello\Controller\HelloController::drupal8Name'
+    _title: 'Hello Drupal8 Name'
+  requirements:
+    _permission: 'access content'
