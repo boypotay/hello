@@ -1,3 +1,8 @@
 services:
   hello.currentuser:
     class: Drupal\hello\Service\HelloCurrentuser
+    
+  hello.route_subscriber:
+    class: Drupal\hello\Routing\RouteSubscriber
+    tags:
+      - { name: event_subscriber }
