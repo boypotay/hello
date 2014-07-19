@@ -16,3 +16,11 @@ hello.argument:
     _title: 'Hello Drupal8 Name'
   requirements:
     _permission: 'access content'
+    
+hello.iform:
+    path: '/iform'
+    defaults:
+        _title: Iform
+        _form: 'Drupal\hello\Controller\Iform'
+    requirements:
+        _permission: 'access content'
